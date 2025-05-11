@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz 5 – Farben, Polarisation, Wahrnehmung</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+    .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #222; }
+    .task { margin-bottom: 30px; }
+    textarea { width: 100%; height: 40px; font-size: 14px; margin-top: 5px; }
+    button { margin-top: 5px; padding: 8px 12px; font-size: 14px; }
+    .feedback { display: none; margin-top: 10px; background: #eef; padding: 10px; border-radius: 5px; }
+  </style>
+  <script>
+    function showSolution(id, solution) {
+      const elem = document.getElementById("solution_" + id);
+      elem.innerText = "Richtige Antwort: " + solution;
+      elem.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+  <h1>Quiz 5 – Farben, Polarisation, Wahrnehmung</h1>
+
+    <div class="task">
+      <strong>Frage 1:</strong> Welche Farben ergeben bei additiver Farbmischung Weiß?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(1, `Rot, Grün, Blau`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_1"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 2:</strong> Welche Farben ergeben bei subtraktiver Mischung Schwarz?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(2, `Cyan, Magenta, Gelb`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_2"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 3:</strong> Welche Farbe entsteht bei Rot + Grün (additiv)?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(3, `Gelb`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_3"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 4:</strong> Welche Farbtypen nimmt das menschliche Auge wahr?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(4, `Rot, Grün, Blau (Zapfentypen)`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_4"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 5:</strong> Was ist Polarisation?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(5, `Ausrichtung der Schwingungsebene des Lichts`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_5"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 6:</strong> Wie kann Licht polarisiert werden?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(6, `Durch Filter oder Reflexion`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_6"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 7:</strong> Welche Alltagsanwendung nutzt Polarisation?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(7, `Polarisationsbrillen`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_7"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 8:</strong> Warum sehen wir einen Regenbogen?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(8, `Lichtbrechung und Reflexion in Regentropfen`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_8"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 9:</strong> Was passiert bei vollständiger Absorption von Licht?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(9, `Die Fläche erscheint schwarz`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_9"></div>
+    </div>
+
+    <div class="task">
+      <strong>Frage 10:</strong> Wie nennt man die Rückkehr zum Grundzustand nach Anregung?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="showSolution(10, `Relaxation`)">Lösung anzeigen</button>
+      <div class="feedback" id="solution_10"></div>
+    </div>
+</div></body></html>
